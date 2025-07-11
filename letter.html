@@ -103,27 +103,35 @@
     }
 
     .love-text {
-      position: absolute;
-      font-size: 1.2em;
-      font-weight: bold;
-      font-family: 'Sacramento', cursive;
-      color: #ff4d88;
-      animation: fallLove linear infinite;
-      opacity: 0.8;
-      white-space: nowrap;
-    }
+  position: absolute;
+  top: -50px; /* Start above the screen */
+  font-size: 1.2em;
+  color: #e60073;
+  opacity: 0;
+  animation-name: fallLove;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  pointer-events: none;
+  font-weight: bold;
+  font-family: 'Sacramento', cursive;
+}
+
 
 
 @keyframes fallLove {
   0% {
-    transform: translateY(-10%) rotate(0deg);
+    transform: translateY(-100px) rotate(0deg);
     opacity: 0;
+  }
+  10% {
+    opacity: 0; /* stays invisible at start */
   }
   30% {
     opacity: 1;
   }
   100% {
-    transform: translateY(110vh) rotate(180deg); /* Slower rotation */
+    transform: translateY(110vh) rotate(180deg);
     opacity: 0;
   }
 }

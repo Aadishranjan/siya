@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Poem for Siya 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: radial-gradient(circle at top left, #ffe6eb, #fff0f5);
+      overflow-x: hidden;
+      overflow-y: auto;
+      color: #4d2c2c;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      background: #fffafa;
+      padding: 50px 30px;
+      border-radius: 30px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3em;
+      text-align: center;
+      color: #e60073;
+      margin-bottom: 30px;
+    }
+
+    .poem {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      line-height: 2;
+      text-align: center;
+      white-space: pre-wrap;
+      color: #5c2a2a;
+      background-color: #fff0f5;
+      padding: 30px;
+      border-radius: 20px;
+      border: 2px dashed #ff99aa;
+    }
+
+    .signature {
+      text-align: right;
+      font-family: 'Sacramento', cursive;
+      font-size: 1.6em;
+      color: #d63384;
+      margin-top: 25px;
+    }
+
+    .next-button {
+      display: block;
+      margin: 50px auto 0;
+      padding: 12px 30px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .next-button:hover {
+      background-color: #e60073;
+    }
+
+    /* ❤️ Falling Hearts */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .hearts span {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center;
+      background-size: cover;
+      animation: fall linear infinite;
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-10%) rotate(0deg);
+        opacity: 0;
+      }
+      30% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔐 Protect from direct access -->
+  <script>
+    if (localStorage.getItem("access_granted") !== "true") {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <!-- ❤️ Falling Hearts -->
+  <div class="hearts">
+    <span style="left: 5%; animation-duration: 12s;"></span>
+    <span style="left: 15%; animation-duration: 10s;"></span>
+    <span style="left: 25%; animation-duration: 14s;"></span>
+    <span style="left: 40%; animation-duration: 9s;"></span>
+    <span style="left: 55%; animation-duration: 13s;"></span>
+    <span style="left: 70%; animation-duration: 11s;"></span>
+    <span style="left: 85%; animation-duration: 10s;"></span>
+    <span style="left: 95%; animation-duration: 12s;"></span>
+  </div>
+
+  <div class="container">
+    <h1>Ek Nazm Siya Ke Naam 💗</h1>
+
+    <div class="poem"> 
+    Tum ho mere khwabon ki chandni raat,<br>
+    Tumse hi roshan hai meri har baat.<br><br>
+
+    Tumhari hasi hai meri zindagi ka noor,<br>
+    Tum na ho toh sab lage ek soona sa dastoor.<br><br>
+
+    Tumhare bina dil bechain sa rehta hai,<br>
+    Tumhara naam hi toh har dhadkan kehta hai.<br><br>
+
+    Tum meri har dua mein, har armaan mein ho,<br>
+    Tum meri har khushi, har pehchaan mein ho.<br><br>
+
+    Rooth jao toh sab kuch adhoora sa lagta hai,<br>
+    Tumhari ek muskaan se dil phir se sajta hai.<br><br>
+
+    Siya, meri jaan… tu hi mera pyaar hai,<br>
+    Main toh bas tera hoon, yeh dil baar-baar kehta hai. 💖
+    </div>
+
+    <div class="signature">
+      Tumhara jaan,<br>
+      Aadu 💖
+    </div>
+
+    <a href="memories.html">
+      <button class="next-button">Next ➜</button>
+    </a>
+  </div>
+</body>
+</html>

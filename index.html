@@ -1,153 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>For Siya 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom right, #ffd1dc, #ffe4e1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       color: #4d2c2c;
-      text-align: center;
-      padding: 40px 20px;
     }
 
-    .container {
-      max-width: 850px;
-      margin: auto;
-      background: #fffafa;
-      padding: 35px;
+    .box {
+      background: #fff;
+      padding: 40px 30px;
       border-radius: 25px;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-      border: 3px solid #ffb6c1;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 2.8em;
+      font-size: 2em;
+      margin-bottom: 20px;
       color: #e60073;
       text-shadow: 1px 1px 2px #ffccdd;
     }
 
     p {
-      font-size: 1.2em;
-      margin: 20px 0;
-      line-height: 1.8;
-    }
-
-    .heart {
-      font-size: 60px;
-      color: #ff3366;
-      animation: heartbeat 1s infinite;
-    }
-
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.3); }
-    }
-
-    .gallery {
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 210px;
-      height: auto;
-      border-radius: 20px;
-      border: 4px solid #ffc0cb;
-      box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-style: italic;
-      font-size: 1.1em;
-      color: #a0522d;
-    }
-
-    .letter {
-      background: linear-gradient(to right, #fff0f5, #ffe4e1);
-      padding: 30px;
-      border-radius: 20px;
-      margin-top: 50px;
-      font-family: 'Georgia', serif;
-      text-align: left;
-      line-height: 2;
-      color: #5c2a2a;
-      border: 2px dashed #ff99aa;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    .letter h2 {
-      text-align: center;
-      color: #d63384;
-      margin-bottom: 25px;
-    }
-
-    .letter p {
       margin-bottom: 20px;
       font-size: 1.1em;
     }
 
-    .letter .signature {
-      text-align: right;
-      margin-top: 30px;
+    input[type="password"] {
+      padding: 10px;
+      font-size: 1em;
+      width: 85%;
+      margin-bottom: 20px;
+      border: 2px solid #ffc0cb;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    button {
+      background: #ff66a3;
+      color: white;
+      padding: 10px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #e60073;
+    }
+
+    .error {
+      color: red;
+      margin-top: 15px;
+      display: none;
+    }
+
+    .heart {
+      font-size: 50px;
+      margin-bottom: 15px;
+      animation: beat 1s infinite;
+      color: #ff3366;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>For My Love, Siya 💖</h1>
+  <div class="box">
     <div class="heart">❤️</div>
-
-    <!-- 💌 Love Letter Section -->
-    <div class="letter">
-      <h2>Siya meri jaan 💗</h2>
-      <p>
-        Aaj phir tumhari yaadon ne dil ko choo liya… aur main yeh letter likh raha hoon, sirf tumhare liye.
-        Kabhi kabhi sochta hoon, tum meri life mein kaise aayi? Jaise ek khushbu se bhari hawa, jo dil ko sukoon deti hai.
-        Tumse milna meri zindagi ka sabse haseen mod tha.
-      </p>
-      <p>
-        Tumhari hansi, tumhari baatein, tumhara roothna, aur phir pyaar se man jaana — sab kuch mere dil ke itne kareeb hai
-        ki main har pal bas tumhe mehsoos karta hoon. Siya, main tumse sirf pyaar nahi karta... main tumhari izzat karta hoon,
-        tumhari har baat, har ehsaas ki kadar karta hoon.
-      </p>
-      <p>
-        Jab tum paas hoti ho, toh duniya ruk jaati hai… aur jab door hoti ho, toh lagta hai jaise sab kuch adhoora hai.
-        Tum meri duniya ho, mera sukoon ho, aur meri har khushi ki wajah ho.
-        Aadu sirf tumhara hai, hamesha se… aur hamesha rahega. 💞
-      </p>
-      <p>
-        Ek wada hai tumse, Siya — jitna pyaar aaj karta hoon, usse kahin zyada kal karunga.
-        Har dard mein tumhara saathi banunga, har khushi mein tumhare saath muskuraunga.
-        Tum meri zindagi ho… meri jaan… meri Siya. ❤️
-      </p>
-      <p class="signature">
-        Hamesha tumhara,<br>
-        <strong style="color: #ff4d6d;">Aadu 💖</strong>
-      </p>
-    </div>
-
-    <div class="gallery">
-      <img src="siya1.jpg" alt="Memory 1">
-      <img src="siya2.jpg" alt="Memory 2">
-    </div>
-
-    <p class="footer">
-      Forever Yours,<br>
-      Aadish 💌
-    </p>
+    <h1>Welcome, Siya 💖</h1>
+    <p>Please enter the secret password to unlock your surprise 💌</p>
+    <input type="password" id="password" placeholder="Enter password..." />
+    <br>
+    <button onclick="checkPassword()">Open</button>
+    <p class="error" id="error">Oops! Wrong password. Try again 💔</p>
   </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value.trim();
+      const correct = "aadu@siya120625"; // change this password if needed
+      if (input === correct) {
+        localStorage.setItem("access_granted", "true");
+        window.location.href = "letter.html";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>

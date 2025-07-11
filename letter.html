@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Love Letter to Siya 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(to top right, #ffe4ec, #fff0f5);
+      font-family: 'Open Sans', sans-serif;
+      color: #4d2c2c;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fffafa;
+      padding: 50px 30px;
+      border-radius: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Sacramento', cursive;
+      color: #e60073;
+      margin-bottom: 20px;
+    }
+
+    .letter {
+      font-size: 1.2em;
+      line-height: 2;
+      text-align: left;
+      white-space: pre-wrap;
+      color: #5c2a2a;
+      font-family: 'Georgia', serif;
+      background: #fff0f5;
+      padding: 30px;
+      border-radius: 20px;
+      border: 2px dashed #ff99aa;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 30px;
+      font-family: 'Sacramento', cursive;
+      font-size: 1.6em;
+      color: #d63384;
+    }
+
+    .audio-player {
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    audio {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .next-button {
+      display: block;
+      margin: 50px auto 0;
+      padding: 12px 30px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .next-button:hover {
+      background-color: #e60073;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .hearts span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Five_heart.svg/32px-Five_heart.svg.png') no-repeat center center;
+      background-size: cover;
+      animation: float 8s linear infinite;
+      opacity: 0.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      30% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (localStorage.getItem("access_granted") !== "true") {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <div class="hearts">
+    <span style="left: 10%; animation-delay: 0s;"></span>
+    <span style="left: 25%; animation-delay: 2s;"></span>
+    <span style="left: 50%; animation-delay: 4s;"></span>
+    <span style="left: 75%; animation-delay: 1s;"></span>
+    <span style="left: 90%; animation-delay: 3s;"></span>
+  </div>
+
+  <div class="container">
+    <h1>Siya meri jaan 💗</h1>
+
+    <div class="letter">
+      Siya meri jaan,
+
+      Aaj humari mohabbat ko ek mahina poora ho gaya… sirf 30 din, par lagta hai jaise tumse judne ka safar ek poori zindagi sa ho. Tumhare saath bitaya har pal mere liye ek naya ehsaas, ek nayi khushi lekar aaya.
+
+      Main kabhi soch bhi nahi sakta tha ki kisi ka pyaar itna gehra, itna khoobsurat ho sakta hai. Tumhari baaton mein ek mithaas hai, tumhari aankhon mein ek jadoo… aur tumhari muskaan toh mere dil ki jaan hai.
+
+      Jab tum meri zindagi mein aayi, tab sab kuch rangin ho gaya. Pehle sirf din hote the, ab tumhare saath har din ek tyohar jaisa lagta hai. Tumne mujhe pyaar karna nahi, pyaar jeena sikha diya.
+
+      Ek mahina ho gaya Siya… par lagta hai abhi toh kahani shuru hui hai. Main chahta hoon ki hum har mahina aise hi saath mein ginte rahein, har lamha ek dusre ke pyaar mein doobte rahein.
+
+      Tum meri zindagi ho, mera sukoon ho, meri poori duniya ho. Tumhara pyaar mere liye ek nayi zindagi ban gaya hai.
+
+      Main hamesha tumhara saath nibhaunga, bina kisi shart ke, bina kisi intezaar ke. Har saans mein tum ho Siya... aur har dhadkan sirf tumhara naam leti hai.
+
+      1 mahina tumhara saath mila — ab poori zindagi tumhare naam kar di hai. 💖
+    </div>
+
+    <div class="signature">
+      Tumhara jaan,<br>
+      Aadu 💖
+    </div>
+
+    <div class="audio-player">
+      <p><strong>🎙 Suno na, kuch dil se kaha hai...</strong></p>
+      <audio controls>
+        <source src="aadu.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <a href="poem.html">
+      <button class="next-button">Next ➜</button>
+    </a>
+  </div>
+</body>
+</html>

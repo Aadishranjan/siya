@@ -16,6 +16,8 @@
       font-family: 'Open Sans', sans-serif;
       color: #4d2c2c;
       overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
     }
 
     .container {
@@ -28,6 +30,7 @@
       margin-bottom: 60px;
       box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
       position: relative;
+      z-index: 2;
     }
 
     h1 {
@@ -87,44 +90,48 @@
       background-color: #e60073;
     }
 
-    .hearts {
+    /* Falling "I love you Siya 💖" */
+    .falling-texts {
       position: fixed;
       top: 0;
       left: 0;
-      pointer-events: none;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      pointer-events: none;
+      z-index: 1;
       overflow: hidden;
     }
 
-    .hearts span {
+    .love-text {
       position: absolute;
-      width: 20px;
-      height: 20px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Five_heart.svg/32px-Five_heart.svg.png') no-repeat center center;
-      background-size: cover;
-      animation: float 8s linear infinite;
-      opacity: 0.7;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-family: 'Sacramento', cursive;
+      color: #ff4d88;
+      animation: fallLove linear infinite;
+      opacity: 0.8;
+      white-space: nowrap;
     }
+
+
+@keyframes fallLove {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(180deg); /* Slower rotation */
+    opacity: 0;
+  }
+}
 
     a {
       text-decoration: none;
     }
 
-    @keyframes float {
-      0% {
-        transform: translateY(100vh) scale(1);
-        opacity: 0;
-      }
-      30% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-10vh) scale(1.5);
-        opacity: 0;
-      }
-    }
   </style>
 </head>
 <body>
@@ -134,13 +141,20 @@
     }
   </script>
 
-  <div class="hearts">
-    <span style="left: 10%; animation-delay: 0s;"></span>
-    <span style="left: 25%; animation-delay: 2s;"></span>
-    <span style="left: 50%; animation-delay: 4s;"></span>
-    <span style="left: 75%; animation-delay: 1s;"></span>
-    <span style="left: 90%; animation-delay: 3s;"></span>
-  </div>
+  <!-- Falling Texts -->
+<div class="falling-texts">
+  <div class="love-text" style="left: 5%; animation-duration: 10s; animation-delay: 0s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 20%; animation-duration: 12s; animation-delay: 2s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 40%; animation-duration: 11s; animation-delay: 1s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 60%; animation-duration: 13s; animation-delay: 3s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 80%; animation-duration: 14s; animation-delay: 2s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 90%; animation-duration: 9s; animation-delay: 4s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 12%; animation-duration: 15s; animation-delay: 2s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 32%; animation-duration: 13s; animation-delay: 1.5s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 48%; animation-duration: 14s; animation-delay: 0.5s;">I love you Siya 💖</div>
+  <div class="love-text" style="left: 68%; animation-duration: 12s; animation-delay: 2.5s;">I love you Siya 💖</div>
+</div>
+
 
   <div class="container">
     <h1>Siya meri jaan 💗</h1>
